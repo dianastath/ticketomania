@@ -1,0 +1,106 @@
+# ENRGOPOIO TO REWRITRE MODE STON APACHE
+LoadModule rewrite_module modules/mod_rewrite.so
+LoadModule headers_module modules/mod_headers.so
+epishs
+AllowOverride All sto httpd.conf toy apache
+
+
+ng add @angular/material         ?
+npm i @angular/material@10.2.7   ?
+
+ng g @angular/core:standalone
+
+ng build
+
+{
+    "data": {
+        "user_password": "123AUA123",
+        "user_email": "email45",
+        "user_type": 4
+    }
+}
+
+
+{
+    "data": {
+        "res_id": 0,
+     
+        "res_user_id":0,
+        "res_date":"2024-02-25",
+        "res_seats":2,
+        "res_show_id":1,
+         "res_status":1,
+         "res_key":"marianna"
+    }
+}
+
+
+put
+{
+  "data":
+  {
+    "user_id": "1", 
+    "user_email": "user1@pap.gr", 
+    "user_password": "userpass1", 
+    "user_type": "1"
+  }
+}
+
+
+
+{
+	"data":
+	{
+ 		"movie_category": "sad",
+ 		"movie_description": "dsa",
+ 		"movie_director": "sdsa",
+ 		"movie_duration": 0,
+ 		"movie_image": "sdsa",
+ 		"movie_script": "sdsa",
+ 		"movie_title1": "TITLOS",
+ 		"movie_title2": "sds",
+ 		"movie_youtube": "sa",
+ 		"movie_id": 0,
+ 		"movie_actors": "sad"
+ 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="form-group">
+      <div class="col-3"><label>Type</label></div>
+      <div class="col-3">
+      <input type="number"
+             class="form-control"
+             name="type"
+             required
+             [(ngModel)]="user.user_type"
+             #userType="ngModel">
+      </div>
+      <span class="help-block danger" *ngIf="userType.errors?.['required'] && userType.touched">
+        The price is required
+      </span>
+    </div>
+
+
+ <div class="clearfix">
+    <img cImg fluid align="start" height="200" width="200" *ngIf="uploadResponse" alt="" rounded src="{{ BaseImageURL+uploadResponse['url'] }}" />
+  </div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <input type="file" name="avatar" (change)="onFileSelect($event)" />
+    <button type="submit">Upload</button>
+
+  </form>
+</div>
